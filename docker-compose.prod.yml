@@ -7,7 +7,7 @@ services:
             - ./_docker/nginx/conf.d/:/etc/nginx/conf.d/
             - ./:/var/www/
         ports:
-            - 80:80
+            - 8877:80
         depends_on:
             - app
         container_name: proj_nginx
